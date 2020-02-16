@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
-const userSchema = new Schema({
+const userSchema = new Schema({ // db에 해당 콜랙션이 없으면, 생성한다.
     name: {
         type: String,
         required: true,

@@ -2,4 +2,12 @@ extends layout
 
 block content
   h1= title
+  div(style="max-width: 900px; margin: auto;")
   p Welcome to #{title}
+  form(method="post" action="/user/save")
+    div(style="padding: 12px;")
+      input(type="text" name="name" placeholder="name")
+    div(style="padding: 12px;")
+      input(type="number" name="age" placeholder="age")
+    div(style="padding: 12px; text-align: center;")
+      button save
